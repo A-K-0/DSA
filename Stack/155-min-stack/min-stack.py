@@ -12,14 +12,12 @@ class MinStack(object):
             return None
         else:
             self.stack.pop()
-        return None
         
 
     def top(self):
         if len(self.stack) == 0:
             return None
         else:
-            # h = len(self.stack)-1 
             return self.stack[-1]
         
 
