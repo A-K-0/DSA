@@ -19,9 +19,8 @@ class MinStack(object):
         if len(self.stack) == 0:
             return None
         else:
-            h = len(self.stack)-1
-            top = self.stack[h]
-        return top
+            # h = len(self.stack)-1 
+            return self.stack[-1]
         
 
     def getMin(self):
