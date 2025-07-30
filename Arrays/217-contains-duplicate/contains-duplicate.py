@@ -1,8 +1,5 @@
 class Solution(object):
     def containsDuplicate(self, nums):
-        
-        if nums is None:
-            return False
 
         checker = set()
 
