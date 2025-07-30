@@ -13,31 +13,26 @@ class Solution(object):
             if token.lstrip('-').isdigit():
                 stack.append(int(token))
 
-            elif token == '+':
+            else:
                 temp1 = stack.pop()
                 temp2 = stack.pop()
-                total = temp2 + temp1
-                stack.append(total)
 
-            elif token == '-':
-                temp1 = stack.pop()
-                temp2 = stack.pop()
-                total = temp2 - temp1
-                stack.append(total)
 
-            elif token == '*':
-                temp1 = stack.pop()
-                temp2 = stack.pop()
-                total = temp2 * temp1
-                stack.append(total)
+                if token == '+':
+                    total = temp2 + temp1
 
-            elif token == '/':
-                temp1 = stack.pop()
-                temp2 = stack.pop()
-                total = int(float(temp2) / temp1)
-                stack.append(total)
+                elif token == '-':
+                    total = temp2 - temp1
 
-            total = temp1 = temp2 = 0
+                elif token == '*':
+                    total = temp2 * temp1
+
+                elif token == '/':
+                    total = int(float(temp2) / temp1)
+
+                stack.append(total)
+                total = temp1 = temp2 = 0
+
 
         return stack[-1]
             
