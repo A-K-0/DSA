@@ -32,6 +32,7 @@ class Solution(object):
 
             valid.clear()
 
+        #Validate boxes
         box_start = [(0,0),(0,3),(0,6),
                      (3,0),(3,3),(3,6),
                      (6,0),(6,3),(6,6)]
@@ -45,7 +46,7 @@ class Solution(object):
                         return False
                     elif item != '.':
                         valid.add(item)
-                        
+
             valid.clear()
         
 
