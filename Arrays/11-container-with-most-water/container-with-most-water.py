@@ -20,11 +20,11 @@ class Solution(object):
             if height[left] > height[right]:
                 right = right - 1
             
-            elif height[left] < height[right]:
+            else:
                 left = left + 1
 
-            else:
-                right = right - 1
+            # else:
+            #     right = right - 1
 
             # if height[left] == height[right]:
 
