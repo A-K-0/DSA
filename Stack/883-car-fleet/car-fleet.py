@@ -10,15 +10,12 @@ class Solution(object):
         #Distance = Speed/Time
         #Time = Distance/Speed
 
-        if len(position) < 2:
-            return len(position)
+        
 
         stack = []
         merged = list(zip(position,speed))
 
         final = sorted(merged, key = lambda x : x[0], reverse=True)
-
-        print(final)
 
 
 
