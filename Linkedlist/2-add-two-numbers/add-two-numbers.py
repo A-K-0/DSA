@@ -11,43 +11,52 @@ class Solution(object):
         :rtype: Optional[ListNode]
         """
 
-        Tot = 0
-        Carry = 0
-        dummy = ListNode(0)
-        curr = dummy
-        # curr = head
+        def numcr():
 
-      
+            num1 = ''
+            num2 = ''
+
+            curr1 = l1
+            curr2 = l2
+
+            while curr1 or curr2:
+
+                if curr1:
+                    n = curr1.val 
+                    num1 =  str(n) + num1
+                    curr1 = curr1.next
+
+                if curr2:
+                    m = curr2.val 
+                    num2 = str(m) + num2
+                    curr2 = curr2.next
+
+            return int(num1),int(num2)
 
 
-        while l1 or l2 or Carry:
+        num1,num2 = numcr()
 
-            x = l1.val if l1 else 0
-            y = l2.val if l2 else 0
+        Total = num1 + num2
 
+        dummy = ListNode()
+        current = dummy  
+        
+        if Total == 0:
+            dummy = ListNode()
+            current = dummy  
+            current.next = ListNode(0)
 
-            Tot = x + y + Carry
-            if l1:
+        while Total != 0:
+            n = Total % 10
+            Total = Total // 10
 
-                l1 = l1.next
-            if l2:
-
-                l2 = l2.next
-
-            if Tot > 9:
-                curr.next = ListNode(Tot % 10)
-                Carry = Tot // 10
-                curr = curr.next
-
-            else:
-                curr.next = ListNode(Tot % 10)
-                Carry = 0
-                curr =curr.next
+            current.next = ListNode(n)
+            current = current.next
 
         return dummy.next
-        
 
-        
+
             
-            
+
+
         
