@@ -44,7 +44,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        curr = ListNode(-1)
+        # curr = ListNode(-1)
         curr = head
         dummy = curr
 
