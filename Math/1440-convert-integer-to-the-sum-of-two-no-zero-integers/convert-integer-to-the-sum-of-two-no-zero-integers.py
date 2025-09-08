@@ -6,11 +6,11 @@ class Solution(object):
         """
         for i in range(1,n):
 
-            num = n - i
+            # num = n - i
 
-            if '0' not in str(num) and '0' not in str(n - num):
+            if '0' not in str(i) and '0' not in str(n - i):
                 break
 
-        return [n-num, num]
+        return [i, n-i]
 
         
