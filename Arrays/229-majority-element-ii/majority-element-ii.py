@@ -1,6 +1,3 @@
-import math
-
-
 
 class Solution(object):
     def majorityElement(self, nums):
@@ -36,7 +33,7 @@ class Solution(object):
                 count1,count2 = count1 - 1,count2 - 1
 
         for n in [Num1,Num2]:
-            if n is not None and nums.count(n) > math.ceil(len(nums) / 3):
+            if n is not None and nums.count(n) > len(nums) / 3:
                 res.append(n)
 
 
