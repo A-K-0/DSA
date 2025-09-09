@@ -8,12 +8,12 @@ class Solution(object):
         count = 0
         curr = 0
 
-        for i in range(len(nums)):
+        for num in nums:
 
             if count == 0:
-                curr = nums[i]
+                curr = num
 
-            if curr == nums[i]:
+            if curr == num:
                 count += 1
 
             else:
