@@ -41,20 +41,10 @@ class Solution(object):
         count = 0
 
         for char in s:
-            if char == "a":
+            if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
                 count += 1
 
-            if char == "e":
-                count += 1
-
-            if char == "i":
-                count += 1
             
-            if char == "o":
-                count += 1
-            
-            if char == "u":
-                count += 1
 
         if count == 0:
             return False
