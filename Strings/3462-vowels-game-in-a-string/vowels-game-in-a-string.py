@@ -20,12 +20,10 @@
 # * Alice - Odd
 # * Bob - Even
 
-# * Traverse through the string and check if there is any vowel if there increase the value of the
-#   variable and get to know how many vowels are there
+# * NO NEED OF TOO MUCH THINKING
 
-# * create another variable in a different function which will go through the string and count vowels
-#   ,if it contains 
-
+# * There is only one way bob is going to win which is a string having no vowels and all other cases 
+#   return True as alice is going to win
 
 
 
@@ -38,16 +36,13 @@ class Solution(object):
         :rtype: bool
         """
 
-        count = 0
+        
 
         for char in s:
             if char in 'aeiou':
-                count += 1
+                return True
 
-        if count == 0:
-            return False
+        return False
 
-        else:
-            return True
         
         
