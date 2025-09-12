@@ -41,7 +41,7 @@ class Solution(object):
         count = 0
 
         for char in s:
-            if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+            if char in 'aeiou':
                 count += 1
 
         if count == 0:
