@@ -36,12 +36,9 @@ class Solution(object):
         :rtype: bool
         """
 
-        
-
         for char in s:
             if char in 'aeiou':
                 return True
-
         return False
 
         
