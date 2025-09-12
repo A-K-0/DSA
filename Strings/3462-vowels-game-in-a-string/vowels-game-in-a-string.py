@@ -44,16 +44,10 @@ class Solution(object):
             if char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
                 count += 1
 
-            
-
         if count == 0:
             return False
 
-        if count % 2 == 0:
+        else:
             return True
-
-        if count % 2 != 0:
-            return True
-
         
         
