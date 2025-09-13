@@ -22,8 +22,4 @@ class Solution(object):
                 freq[x] += 1
                 MaxCons = max(MaxCons,freq[x])
 
-            print(MaxVow,MaxCons)
-
-            print(chr(97), chr(97) in 'aeiou')
-
         return MaxVow + MaxCons
